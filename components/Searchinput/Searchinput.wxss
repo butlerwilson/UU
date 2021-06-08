@@ -1,0 +1,43 @@
+/* components/Searchinput/Searchinput.wxss */
+.all {
+  width: 100%;
+}
+.searchbar {
+  position: relative;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  background-color: rgb(235, 134, 51);
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+.icon-search{
+  position: absolute;
+  left: 10rpx;
+  top: 7px;
+}
+.searchform {
+  position: absolute;
+  left: 20rpx;
+  top: 15rpx;
+  width: 80%;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.searchinput {
+  padding-left: 60rpx;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.searchbtn {
+  position: absolute;
+  top: 15rpx;
+  right: 0;
+  width: 13%;
+  margin-left: 10px;
+  line-height: 28px;
+  color: rgb(145, 141, 134);
+  white-space: nowrap;
+}

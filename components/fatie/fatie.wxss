@@ -1,0 +1,101 @@
+/* pages/edit/edit.wxss */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30rpx;
+    height: 30pt;
+    font-size: 11pt;
+}
+.header-delive {
+    color: #09BB07;
+}
+.title {
+    padding-left: 37rpx;
+    width: 90%;
+    display: flex;
+}
+.title-left {
+    padding-top: 12rpx;
+    padding-bottom: 12rpx;
+    background-color: white;
+    width: 20%;
+    font-size: 40rpx;
+    text-align: center;
+}
+.title-right {
+    padding-top: 12rpx;
+    padding-bottom: 12rpx;
+    background-color: white;
+    width: 80%;
+}
+.title-content {
+    background-color: white;
+}
+.divid {
+    height: 30rpx;
+}
+.content {
+    width: 100%;
+}
+.content1 {
+    padding-left: 37rpx;
+    width: 100%;
+}
+.content2 {
+    width: 100%;
+   background-color: white;
+}
+.content-detail {
+    padding-left: 37rpx;
+    width: 90%;
+}
+.content-price {
+    padding-left: 37rpx;
+    width: 90%;
+    display: flex;
+}
+.price1 {
+    padding-top: 12rpx;
+    padding-bottom: 12rpx;
+    background-color: white;
+    width: 20%;
+    font-size: 40rpx;
+    text-align: center;
+}
+.price-right {
+    padding-top: 12rpx;
+    padding-bottom: 12rpx;
+    background-color: white;
+    width: 80%;
+}
+.price-content {
+    background-color: white;
+}
+.fen {
+    padding-left: 37rpx;
+    width: 90%;
+}
+.fenlei {
+    width: 25%;
+    text-align: center;
+}
+.img {
+    display: flex;
+    padding-left: 37rpx;
+    width: 90%;
+    word-break:break-all;
+}
+.img-a {
+    width: 150rpx;
+    height: 150rpx;
+}
+.img-b {
+    padding-left: 37rpx;
+    width: 150rpx;
+    height: 150rpx;
+}
+.tips {
+    color: red;
+    font-size: 30rpx;
+}

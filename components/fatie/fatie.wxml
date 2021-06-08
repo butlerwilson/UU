@@ -1,0 +1,96 @@
+<!--pages/edit/edit.wxml-->
+<view style="width: 100%;background-color:rgb(243, 243, 243);">
+    <view class='top'>
+        <text bindtap='saveEditOrNot'>返回</text>
+        <text class='header-delive' bindtap='addDate'>发表</text>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="title">
+        <view class="title-left">标题</view>
+        <view class="title-right">
+        <input class='title-content' placeholder="拼单标题" placeholder-style='color:#888' value="{{title}}" bindinput="getBiaoti" />
+        </view>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="content">
+        <view class="content1">请进行具体描述：</view>
+        <view style="height: 10rpx;"><text></text></view>
+        <view class="content-detail">
+         <textarea class='content2' placeholder='这一刻的拼单想法...' placeholder-style='color:#888' bindinput="getInputValue" value="{{content}}"></textarea>   
+        </view>
+        <view class="divid">
+            <text></text>
+            <text></text>
+        </view>
+        <view class="content-price">
+            <view  class="price1">价格</view>
+            <view class="price-right"><input class='price-content' placeholder="拼单价格默认为0元" placeholder-style='color:#888' value="{{price}}" bindinput="getPrice" /></view>
+        </view>
+        <view class="divid">
+            <text></text>
+            <text></text>
+        </view>
+        <view class="content-price">
+            <view  class="price1">人数</view>
+            <view class="price-right"><input class='price-content' placeholder="人数默认为1" placeholder-style='color:#888' value="{{pnum}}" bindinput="getnum" /></view>
+        </view>
+        <view class="divid">
+            <text></text>
+            <text></text>
+        </view>
+        <view class="fen">
+            <view>      拼单分类</view>
+            <radio-group bindchange="getfenlei">
+                <radio  class="fenlei" color="red" value="学习"> 学习</radio>
+                <radio  class="fenlei" color="red" value="运动"> 运动</radio>
+                <radio  class="fenlei" color="red" value="饮食"> 饮食</radio>
+                <radio  class="fenlei" color="red" value="购物"> 购物</radio>
+            </radio-group>
+        </view>
+        <view class="divid">
+            <text></text>
+            <text></text>
+        </view>
+        <view class='img'>
+            <view wx:for="{{images}}" class="img-a" wx:key="index" bindtap="ViewImage" data-url="{{images[index]}}">
+                <image src='{{item}}' mode='aspectFill' class="img-a" />
+            </view>
+        </view>
+        <view class="img-b"><image class="img-a" src="/images/pages/homes/home/4.png" catchtap='chooseImage'></image>
+        <text>加入图片</text>
+        </view>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+    <view class="tips">
+        <view style="padding-left: 37rpx;"> 请注意 当前拼单默认有效时间为24小时</view>
+    </view>
+    <view class="divid">
+        <text></text>
+        <text></text>
+    </view>
+</view>
