@@ -1,0 +1,12 @@
+<!--pages/homes/show/show.wxml-->
+<view class="top">猜您想要</view>
+<view class="line"></view>
+<view class="" wx:for="{{pinlist}}"  bindtap="xiangqing" data-item="{{item}}">
+  <view>{{item.title}}</view>
+  <view class="item">
+    <view class="info">￥{{item.price}}</view>
+    <view class="info">缺{{item.pnum-item.snum}}人</view>
+    <view class="info">{{item.startime}}</view>
+  </view>
+  <view class="line"></view>
+</view>

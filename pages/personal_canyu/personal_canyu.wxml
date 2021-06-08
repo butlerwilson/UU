@@ -1,0 +1,12 @@
+<view class="top">我的参与</view>
+<view class="line"></view>
+<view class="re" wx:for="{{myList}}" wx:key="item" bindtap="xiangqing" data-item="{{item}}" bindtap="detail">
+    <view>{{item.title}}</view>
+  <view class="item">
+    <view class="info">￥{{item.price}}</view>
+    <view class="info">缺{{item.pnum-item.snum}}人</view>
+    <view class="info">{{item.type}}</view>
+    <view class="info">{{item.startime}}</view>
+  </view>
+  <view class="line"></view>
+</view>

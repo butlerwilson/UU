@@ -1,0 +1,27 @@
+/* pages/add/add.wxss */
+
+.con {
+  background-color: white;
+}
+
+.tip {
+  background-color: wheat;
+  padding: 20rpx;
+  margin: 60rpx;
+  color: #999;
+  font-size: 25rpx;
+}
+
+.yy {
+  text-align: center;
+  font-size: 30rpx;
+}
+
+navigator {
+  display: inline-block;
+  color: blue;
+}
+
+.ss {
+  margin: 20rpx;
+}

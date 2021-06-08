@@ -1,0 +1,31 @@
+<!--pages/home/home.wxml-->
+<view class="my">
+<Searchinput></Searchinput>
+<view>
+    <view class="top">
+        <image src="/images/pin1.gif"  class="pin" bindtap="randomdetail" />
+    </view>
+</view>
+  <view class="bottom">
+    <view class="fenlei">
+      <view class="fen1"><image src="/images/book.png" class="picture" bindtap="pintype" data-type="学习" /></view>
+      <view class="fen1"><image src="/images/sport.png" class="picture" bindtap="pintype" data-type="运动" /></view>
+      <view class="fen1"><image src="/images/tea.png" class="picture" bindtap="pintype" data-type="饮食" /></view>
+      <view class="fen1"><image src="/images/shop.png" class="picture" bindtap="pintype" data-type="购物" /></view>
+    </view>
+  
+   <p >为你推荐</p>
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+</view>
+<view class="re" wx:for="{{pinlist}}" wx:key="item" bindtap="detail" data-item="{{item}}">
+    <view>{{item.title}}</view>
+  <view class="item">
+    <view class="info">￥{{item.price}}</view>
+    <view class="info">缺{{item.pnum-item.snum}}人</view>
+    <view class="info">{{item.type}}</view>
+    <view class="info">{{item.startime}}</view>
+  </view>
+  <view class="line"></view>
+</view>

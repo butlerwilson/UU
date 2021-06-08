@@ -1,0 +1,17 @@
+.con {
+  padding: 10rpx;
+  color: #999;
+}
+
+
+.cc {
+  font-size:46rpx;
+  font-weight:800;
+  margin-top:10rpx;
+  color:black;
+  text-align:center
+}
+.text {
+  font-size:30rpx;
+  
+}

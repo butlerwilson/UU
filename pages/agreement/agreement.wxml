@@ -1,0 +1,10 @@
+
+<view class='con' style='margin-top: {{height*2+20}}px'>
+  <view class="cc">拼单须知</view>
+  <view class="text">1.针对需要拼团参与的拼单，请在文章描述中说明联系方式</view>
+  <view class="text">2.对于需要进行交易的拼单，请注意自身财产安全</view>
+  <view class="text">3.请勿发布违法违规内容，遵守相关法律法规。</view>
+  <view class="cc" >商业合作</view>
+  <view class="text">4.如果你觉得平台还不错，想成为合作伙伴，请在我的界面联系我们</view>
+  
+</view>

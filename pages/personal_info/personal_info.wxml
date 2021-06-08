@@ -1,0 +1,101 @@
+<view class='con'>
+  <view class='fir'>
+       <image src="{{img}}" class='ffff'></image>
+   </view>
+
+   <view class='pr'></view>
+
+   <view class='thr' >
+       <view class='titem'>
+           <text>昵称</text>
+       </view>
+       <view class='four'>
+           <view class='fitem'>
+               <view class='mar'>
+                   <text class='mar'>{{name}}  ></text>
+               </view>
+           </view>
+          
+       </view>
+   </view>
+
+   <view class='pr'></view>
+
+   <view class='thr' >
+       <view class='titem'>
+           <text>性别</text>
+       </view>
+       <view class='four'>
+           <view class='fitem'>
+               <view class='mar'>
+                   <text class='mar'>{{sex}}  ></text>
+               </view>
+           </view>
+           
+       </view>
+   </view>
+
+   <view class='pr'></view>
+
+   <view class='thr' >
+       <view class='titem'>
+           <text>微信号</text>
+       </view>
+       <view class='four'>
+           <view class='fitem'>
+               <view class='mar'>
+                   <text class='mar'>{{wx}}  ></text>
+               </view>
+           </view>
+           
+       </view>
+   </view>
+
+   <view class='pr'></view>
+
+   <view class='thr' >
+       <view class='titem'>
+           <text>手机</text>
+       </view>
+       <view class='four' bindtap='bindViewTap'>
+           <view class='fitem'>
+               <view class='mar'>
+                   <text class='mar'>{{phone}}  ></text>
+               </view>
+           </view>
+          
+       </view>
+   </view>
+
+   <view class='pr'></view>
+
+   <view class='thr' >
+       <view class='titem'>
+           <text>地址</text>
+       </view>
+       <view class='four'>
+           <view class='fitem'>
+               <view class='mar'>
+                   <text class='mar'>{{province}}{{city}}  ></text>
+               </view>
+           </view>
+           
+       </view>
+   </view>
+
+  <view class='pr'></view>
+  <view class='thr' >
+      
+       <view class='four' style="align:center">
+           <view class='fitem' style="align:center">
+               <view class='mar'>
+                <!-- <button style="align:center" open-type="getUserInfo" wx:if="{{hasUserInfo}}"    bindgetuserinfo="getUserProfile"  type="primary" plain >更新资料</button>  -->
+                <button   wx:if="{{hasUserInfo}}" bindtap="getUserProfile"  type="primary" plain> 获取资料 </button>
+               </view>
+           </view>
+           <view class='ft'>
+               <image src='' class='thirdimagestyle'></image> 
+           </view>
+       </view>
+   </view>
+</view>

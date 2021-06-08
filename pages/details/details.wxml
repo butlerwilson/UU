@@ -1,0 +1,32 @@
+<view class="my">
+  <view class="top">
+    <view class="top-left">
+      <image src="{{pin.userinfo.avatarUrl}}" class="pictr"></image>
+    </view>
+    <view class="top-right">{{pin.userinfo.nickName}}</view>
+  </view>
+  <view class="divide"><text></text></view>
+  <view class="nav">
+    <view>{{pin.title}}</view>
+    <view class="divide"><text></text></view>
+    <view class="item-nav">
+      <view class="info-nav">￥{{pin.price}}</view>
+      <view class="info-nav">{{pin.type}}</view>
+      <view class="info-nav">缺{{pin.pnum-pin.snum}}人</view>
+      <view class="info-nav">{{pin.updatetime}}</view>
+    </view>
+  </view>
+
+  <view class="divide"><text></text></view>
+  <view class="divide"><text></text></view>
+  <view class="bottom">
+    <view class="content">{{pin.content}}</view>
+    <view class="divide"><text></text></view>
+    <view class="divide"><text></text></view>
+    <view class="content-image" wx:for="{{pin.pictur}}" wx:for-item="picture">
+      <image src="{{picture}}"></image>
+      <view class="divide"><text></text></view>
+    </view>
+    <view class="buttom"><button type="primary" bindtap="wyp">我要拼</button></view>
+  </view>
+</view>

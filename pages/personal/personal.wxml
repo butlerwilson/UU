@@ -1,0 +1,60 @@
+<view class="background">
+  <view class="Myhead">
+    <view class="MyheadIcon">
+      <image src="{{userInfo.avatarUrl}}" style="width:220rpx;height:220rpx;border-radius:50%"></image>
+    </view>
+    <view class="MyLogin">
+      {{userInfo.nickName}}
+    </view>
+  </view>
+  <button   wx:if="{{hasUserInfo}}" bindtap="getUserProfile"  type="primary" plain> 微信登录 </button>
+</view>
+ 
+<view class="nbsp"></view>
+<view class='items' bindtap='bindViewTapbasic'>
+  <view class="info">我的信息</view>
+  <view class="info2">
+    <text>></text>
+  </view>
+</view>
+<view class="nbsp"></view>
+<navigator url="/pages/personal_fabu/personal_fabu">
+<view class='items'>
+  <view class="info">我的拼单</view>
+  <view class="info2">
+    <text>></text>
+  </view>
+</view>
+</navigator>
+<navigator url="/pages/personal_canyu/personal_canyu">
+<view class='items'>
+  <view class="info">我的参与</view>
+  <view class="info2">
+    <text> ></text>
+  </view>
+</view>
+</navigator>
+<view class="nbsp"></view>
+
+<view class="items" >
+  <view class="info" >我的客服</view>
+  <view class="info2">
+    <text> xxx-xxx-xxx></text>
+  </view>
+</view>
+<navigator url="/pages/personal_about/personal_about">
+<view class="items">
+  <view class="info">程序介绍</view>
+  <view class="info2">
+    <text> ></text>
+  </view>
+</view>
+</navigator>
+<view class="items" bindtap="call">
+  <view class="info">联系我们</view>
+  <view class="info2">
+    <text> ></text>
+  </view>
+</view>
+<view class="nbsp"></view>
+<view class="nbsp"></view><view class="nbsp"></view>

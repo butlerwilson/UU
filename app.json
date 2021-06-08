@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/showbytype/showbytype",
+    "pages/personal/personal",
+    "pages/beforefatie/beforefatie",
+    "pages/agreement/agreement",
+    "pages/fatie/fatie",
+    "pages/personal_about/personal_about",
+    "pages/personal_fabu/personal_fabu",
+    "pages/personal_canyu/personal_canyu",
+    "pages/personal_info/personal_info",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/utils/image"
+  ],
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#ddd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabBar/zhuye.png",
+        "selectedIconPath": "/images/tabBar/zhuye_active.png"
+      },
+      {
+        "pagePath": "pages/beforefatie/beforefatie",
+        "iconPath": "/images/tabBar/fatie1.png",
+        "selectedIconPath": "/images/tabBar/fatie2.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/images/tabBar/wode.png",
+        "selectedIconPath": "/images/tabBar/wode_active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "UU互助",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

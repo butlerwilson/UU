@@ -1,0 +1,12 @@
+<!--pages/homes/show/show.wxml-->
+<view class="top">{{type}}</view>
+<view class="line"></view>
+<view class="re" wx:for="{{pinlist}}"  bindtap="xiangqing" data-item="{{item}}">
+  <view>{{item.title}}</view>
+  <view class="item">
+    <view class="info">￥{{item.price}}</view>
+    <view class="info">缺{{item.pnum-item.snum}}人</view>
+    <view class="info">{{item.startime}}</view>
+  </view>
+  <view class="line"></view>
+</view>

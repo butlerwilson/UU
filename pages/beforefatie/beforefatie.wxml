@@ -1,0 +1,13 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class='con' style='margin-top: {{height*2+20}}px'>
+  <view class="tip">
+    <text selectable="{{true}}">免责声明：该小程序所发布内容均与本拼单平台无关</text>
+  </view>
+  <view class="yy">
+    <checkbox bindtap="look_agreement">同意</checkbox>
+    <navigator url="/pages/agreement/agreement">《拼单约定》</navigator>
+  </view>
+  <view class="ss">
+    <button type="primary" bindtap="to_add">去拼单</button>
+  </view>
+</view>
